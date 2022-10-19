@@ -1,4 +1,3 @@
-import java.util.regex.Matcher; //where to look
 import java.util.regex.Pattern; //what we're looking for
 import java.io.File;  //import the File class
 import java.io.FileNotFoundException;  //import this class to handle errors
