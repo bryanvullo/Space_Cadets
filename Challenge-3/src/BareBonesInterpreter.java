@@ -1,9 +1,11 @@
-import java.util.regex.Pattern; //what we're looking for
-import java.io.File;  //import the File class
-import java.io.FileNotFoundException;  //import this class to handle errors
-import java.util.Scanner; //import the Scanner class to read text files
+package src;
+
+import java.io.File;
+import java.io.FileNotFoundException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
+import java.util.regex.Pattern;
 
 class BareBonesInterpreter {
   String fileName;
@@ -202,7 +204,7 @@ class BareBonesInterpreter {
   }
 
   public static void main(String[] args) {
-    BareBonesInterpreter myInterpreter = new BareBonesInterpreter("BareBonesCode2.txt");
+    BareBonesInterpreter myInterpreter = new BareBonesInterpreter("src/BareBonesCode2.txt");
     myInterpreter.createFile();
     myInterpreter.setWhileloop();
     myInterpreter.printVariables(myInterpreter.variables);
