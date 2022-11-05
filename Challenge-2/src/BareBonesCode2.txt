@@ -1,5 +1,5 @@
 clear X;
-incr X;
+incr clearX;
 incr X;
 incr X;
 clear Y;

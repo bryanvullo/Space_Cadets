@@ -18,13 +18,13 @@ class BareBonesInterpreter {
   Integer lineNumber = 1;
 
   //sets words to look for
-  Pattern clear = Pattern.compile("clear", Pattern.CASE_INSENSITIVE);
-  Pattern incr = Pattern.compile("incr", Pattern.CASE_INSENSITIVE);
-  Pattern decr = Pattern.compile("decr", Pattern.CASE_INSENSITIVE);
-  Pattern whileloop = Pattern.compile("while", Pattern.CASE_INSENSITIVE);
-  Pattern end = Pattern.compile("end", Pattern.CASE_INSENSITIVE);
-  Pattern not = Pattern.compile("not", Pattern.CASE_INSENSITIVE);
-  Pattern doWord = Pattern.compile("do", Pattern.CASE_INSENSITIVE);
+  Pattern clear = Pattern.compile("clear\\b", Pattern.CASE_INSENSITIVE);
+  Pattern incr = Pattern.compile("incr\\b", Pattern.CASE_INSENSITIVE);
+  Pattern decr = Pattern.compile("decr\\b", Pattern.CASE_INSENSITIVE);
+  Pattern whileloop = Pattern.compile("while\\b", Pattern.CASE_INSENSITIVE);
+  Pattern end = Pattern.compile("end\\b", Pattern.CASE_INSENSITIVE);
+  Pattern not = Pattern.compile("not\\b", Pattern.CASE_INSENSITIVE);
+  Pattern doWord = Pattern.compile("do\\b", Pattern.CASE_INSENSITIVE);
 
   //creates the File object and Scanner object
   File myCode;
